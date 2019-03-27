@@ -1535,3 +1535,560 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 14:53:55 -0500
+
+
+Started GET "/" for ::1 at 2019-03-26 17:10:04 -0700
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.11.1) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.11.1) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.11.1) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.11.1) lib/active_record/railtie.rb:122:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.11.1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.11.1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.11.1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.11.1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.11.1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.11.1) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.11.1) lib/active_record/base.rb:26:in `<top (required)>'
+  activesupport (4.2.11.1) lib/active_support/dependencies.rb:274:in `require'
+  activesupport (4.2.11.1) lib/active_support/dependencies.rb:274:in `block in require'
+  activesupport (4.2.11.1) lib/active_support/dependencies.rb:240:in `load_dependency'
+  activesupport (4.2.11.1) lib/active_support/dependencies.rb:274:in `require'
+  activerecord (4.2.11.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.11.1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.11.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.11.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.11.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.11.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.11.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ninman/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/ninman/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/ninman/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.5ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.3ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.2ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:13:01 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:14:16 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+Started GET "/" for ::1 at 2019-03-26 17:15:27 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-26 17:21:38 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-26 17:21:42 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?fake=true" for ::1 at 2019-03-26 17:22:46 -0700
+Processing by SearchesController#search as HTML
+  Parameters: {"fake"=>"true"}
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?fake=true" for ::1 at 2019-03-26 17:22:58 -0700
+Processing by SearchesController#search as HTML
+  Parameters: {"fake"=>"true"}
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:24:32 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:26:22 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=XNEWJITMWDYCUFNKHKDQJ14PCYR3D0FTR2J2TVOWYMN0SCPG&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=W2SYE2Q1F5MDO2F4ITAC3TLH0BWQXQXOOGJGIJZ1G00YOBUL" for ::1 at 2019-03-26 17:26:26 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"W2SYE2Q1F5MDO2F4ITAC3TLH0BWQXQXOOGJGIJZ1G00YOBUL"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 239ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:26:26 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=XNEWJITMWDYCUFNKHKDQJ14PCYR3D0FTR2J2TVOWYMN0SCPG&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=M4CTBDLXTUQZXFRPZ5CWYDYZ1DEVK34ZHQWJEH12LGSOIT1W" for ::1 at 2019-03-26 17:26:28 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"M4CTBDLXTUQZXFRPZ5CWYDYZ1DEVK34ZHQWJEH12LGSOIT1W"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 196ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:26:28 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=XNEWJITMWDYCUFNKHKDQJ14PCYR3D0FTR2J2TVOWYMN0SCPG&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=MR5DVO0DKAYDAFNW0ZLWSQUJYHBY3VKLHFFHX01SN5TY2CYX" for ::1 at 2019-03-26 17:26:30 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"MR5DVO0DKAYDAFNW0ZLWSQUJYHBY3VKLHFFHX01SN5TY2CYX"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 181ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:26:30 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=XNEWJITMWDYCUFNKHKDQJ14PCYR3D0FTR2J2TVOWYMN0SCPG&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=WZN5WWG1M5ZPQ5GIJHNZOKGFNL2MNJ2YH4GTHM5AS45VLSZF" for ::1 at 2019-03-26 17:26:34 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"WZN5WWG1M5ZPQ5GIJHNZOKGFNL2MNJ2YH4GTHM5AS45VLSZF"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 178ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:26:34 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=XNEWJITMWDYCUFNKHKDQJ14PCYR3D0FTR2J2TVOWYMN0SCPG&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=G325OTUY3OASPBJHOZK1IJ5BZBCXM4R4LIPSME2OUD22VYYN" for ::1 at 2019-03-26 17:26:42 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"G325OTUY3OASPBJHOZK1IJ5BZBCXM4R4LIPSME2OUD22VYYN"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 179ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:26:42 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=XNEWJITMWDYCUFNKHKDQJ14PCYR3D0FTR2J2TVOWYMN0SCPG&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=PDNGFBWGUEDPCTZRSORVX054ZMLAGQTLWHW4UUG3JXPJ1TSA" for ::1 at 2019-03-26 17:26:43 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"PDNGFBWGUEDPCTZRSORVX054ZMLAGQTLWHW4UUG3JXPJ1TSA"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 186ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:26:43 -0700
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=XNEWJITMWDYCUFNKHKDQJ14PCYR3D0FTR2J2TVOWYMN0SCPG&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=XYHTOE1D3YSCIQZ2ZSNRAX3DGH10LDWBDNAQNFXJ305BJV2G" for ::1 at 2019-03-26 17:29:10 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"XYHTOE1D3YSCIQZ2ZSNRAX3DGH10LDWBDNAQNFXJ305BJV2G"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 265ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-26 17:29:11 -0700
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 332ms (Views: 328.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-03-26 17:29:20 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pt1jWIm4qu03XrEI1OShtBvtkZe/s8+zosBdewm3QindUcpn8m5v3QLS4PqGebOxSHYVXba2yNfV+e0W4Smabw==", "zipcode"=>"98026", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 331ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-03-26 18:25:36 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 152ms (Views: 144.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-03-26 18:25:39 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xuO0t5IPbMYmTwdf0hCdIKXbvlYappq8MLaJvG1wpiYlbx2I6dmp9hPDVq2AjY8l9kA6nBOjndhHjznRhe5+YA==", "zipcode"=>"98026", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 409ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for ::1 at 2019-03-26 18:25:44 -0700
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kw8OkDvh/LvOGHua/ZtbqJ5Kz89AlNnPYSfLEuM3zIHIg6evQDc5i/uUKmivBkmtzdFLBUmR3qsWHnt/C6kUxw==", "venue_id"=>"5358023f498e1f43b1af86a1", "tip"=>"hello", "commit"=>"Add Tip"}
+Redirected to http://localhost:3000/tips
+Completed 302 Found in 210ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:25:44 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 243ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:26:13 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 250ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:26:14 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 217ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-03-26 18:26:24 -0700
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-03-26 18:26:26 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bWPbbus5wezfyA4VHvOx3o/SIra61hZra0VfMCjtjcCO73JRkO8E3OpEX+dMbqPb3EmmfLPTEQ8cfO9dwHNVhg==", "zipcode"=>"98026", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 315ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for ::1 at 2019-03-26 18:26:32 -0700
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ah3TzV7TcKwDxOiAJazdEe2PfHWt4PHlshcR+JVGsuzhkXryJQW1nDZIuXJ3Mc8UvhT4v6Tl9oHFLqGVfdhqqg==", "venue_id"=>"5358023f498e1f43b1af86a1", "tip"=>"12", "commit"=>"Add Tip"}
+Redirected to http://localhost:3000/tips
+Completed 302 Found in 289ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:26:32 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 216ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:27:01 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 240ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-03-26 18:27:03 -0700
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-03-26 18:27:05 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h44/58UIo2gETzTZJQg96TFx2RObQlMBtglSYwz4ypRkApbYvt5mWDHDZSt3lS/sYupd2ZJHVGXBMOIO5GYS0g==", "zipcode"=>"98026", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 340ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for ::1 at 2019-03-26 18:27:08 -0700
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/zMRndT3LgtHeqNgbKx5Fn3NW2xlrR0ZSskoSDIfp9Acv7iiryHrO3L28pI+MWsTLlbfpmyoGn098Jgl2oF/lg==", "venue_id"=>"4d2dd1fcfeaaa1cdc8f1eb90", "tip"=>"hello", "commit"=>"Add Tip"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x007fec446e5a90>
+Did you mean?  try):
+  
+app/controllers/tips_controller.rb:13:in `block in create'
+app/controllers/tips_controller.rb:12:in `create'
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_ninman__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1583264965309183562_70326423870800 at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.6ms)
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ninman/.rvm/gems/ruby-2.4.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (184.9ms)
+Started GET "/search" for ::1 at 2019-03-26 18:27:32 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 208ms (Views: 199.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-03-26 18:27:36 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z1lmWsxSSObDtV/pFXM0I8iDLyFYpsGRUaTQWe7vJz4s1c9lt4SN1vY5DhtH7iYmmxir61GjxvUmnWA0BnH/eA==", "zipcode"=>"98026", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 325ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for ::1 at 2019-03-26 18:27:39 -0700
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lIKe3jvrNUJU6uXTXYt4zJj2Gi4O9BcWKNHIg/F3o8h3DjfhQD3wcmFmtCEPFmrJy22e5AfxEHJf6HjuGel7jg==", "venue_id"=>"4ade382ff964a520057421e3", "tip"=>"hello", "commit"=>"Add Tip"}
+Redirected to http://localhost:3000/tips
+Completed 302 Found in 114144ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:29:33 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 260ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:29:43 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 323ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-03-26 18:29:44 -0700
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-03-26 18:29:47 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PQSG5g0qQzRCjm4TQ/4e3NkcPDCxL2xQWpt7ZWFX9jbeiC/ZdvyGBHcCP+ERYwzZioe4+rgqazQtossIickucA==", "zipcode"=>"98026", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 318ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for ::1 at 2019-03-26 18:29:49 -0700
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2NKWoSWfIWZydg5utCqZmooOtL4QAmu6W4hSuwuyfik7Xj+eXknkVkf6X5zmt4uf2ZUwdBkHbN4sseLW4yymbw==", "venue_id"=>"5358023f498e1f43b1af86a1", "tip"=>"hello", "commit"=>"Add Tip"}
+Redirected to http://localhost:3000/tips
+Completed 302 Found in 232ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:29:49 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 209ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:30:01 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 444ms (Views: 197.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-03-26 18:30:03 -0700
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-03-26 18:30:04 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hGRdaWF2lNjgvYBNM/S+hpP9D8ubnflsxb6T+Fg5VsRn6PRWGqBR6NUx0b9haayDwGaLAZKY/giyhyOVsKeOgg==", "zipcode"=>"98026", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 328ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for ::1 at 2019-03-26 18:30:07 -0700
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6tsUuEdJ/pjmchCvbVmmLbNjDdpqE6jfcMSI8Vh+zUMJV72HPJ87qNP+QV0/xLQo4PiJEGMWr7sH/TicsOAVBQ==", "venue_id"=>"5358023f498e1f43b1af86a1", "tip"=>"hello", "commit"=>"Add Tip"}
+Redirected to http://localhost:3000/tips
+Completed 302 Found in 562ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:30:08 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 217ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:30:30 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (6697.8ms)
+Completed 200 OK in 6975ms (Views: 6716.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-26 18:32:13 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 251ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-03-26 18:32:14 -0700
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-03-26 18:32:16 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OieJlO6RMmqZWDwtJKCZJiz71KavqKgKu6kXL0U1ep3ZqyCrlUf3WqzUbd92PYsjf2BQbKatr27MkKdCraui2w==", "zipcode"=>"98026", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 327ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for ::1 at 2019-03-26 18:32:18 -0700
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zPs4EOHCdNHHjz2bIosyxdWk51yrAy17CJ8Gw2o5J2wvd5EvmhSx4fIDbGlwFiDAhj9jlqIGKh9/praugqf/Kg==", "venue_id"=>"5358023f498e1f43b1af86a1", "tip"=>"hello", "commit"=>"Add Tip"}
+Started GET "/search" for ::1 at 2019-03-27 09:49:10 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 212ms (Views: 203.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-03-27 09:51:07 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IIBnGYUhj4Gvwzt5iMZq3QGyCwKVe7NlpIJ6hTsLPufDDM4m/vdKsZpPaovaW3jYUimPyJx+tAHTu8ro05XmoQ==", "zipcode"=>"98026", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 1549ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-27 10:45:51 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/ninman/.rvm/gems/ruby-2.4.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 207ms (Views: 197.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-03-27 10:45:54 -0700
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zC5rh0Fl8gmxAdu4APMMxM9SOvi8snq5uinv5RGpE5IvosK4OrM3OYSNikpSbh7BnMm+MrW3fd3NEF+I+TfL1A==", "zipcode"=>"98026", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 514ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for ::1 at 2019-03-27 10:45:58 -0700
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KedRphg9zcsVjrUz8zL9uowQxZ1ntbtv8u2CCCFFCb/Ka/iZY+sI+yAC5MGhr++/34tBV26wvAuF1DJlydvR+Q==", "venue_id"=>"5358023f498e1f43b1af86a1", "tip"=>"hello", "commit"=>"Add Tip"}
+Redirected to http://localhost:3000/tips
+Completed 302 Found in 206ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2019-03-27 10:45:58 -0700
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 255ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
